@@ -38,7 +38,7 @@ print(cm)
 print(accuracy_score(y_test, y_pred))
 
 # Predicting a new result
-users_data_bp = input('Battery power value (0 - 4000): ')
-users_data_ram = input('Ram value (0 - 2000): ')
+users_data_bp = input('Battery power value: ')
+users_data_ram = input('Ram value: ')
 print(f'Price range classification: {classifier.predict(sc.transform([[users_data_bp, users_data_ram]]))[0]}')
 
